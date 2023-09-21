@@ -1,0 +1,4 @@
+jwt:
+  secretKey: yourSecretKey
+  refreshTime: 1800000 # 令牌刷新时间，单位毫秒
+  expiration: 3600000 # 令牌过期时间，单位毫秒
