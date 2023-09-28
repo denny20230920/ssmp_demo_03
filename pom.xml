@@ -135,21 +135,24 @@
             <version>3.0</version>
         </dependency>
 
-
     </dependencies>
 
-    <!-- 控制maven的运行环境 -->
+    <!--Maven多环境设置-->
     <profiles>
+        <!-- 测试环境mavne配置 -->
         <profile>
             <id>test_env</id>
             <properties>
+                <!-- 提供变量给springboot调用-->
                 <profile.active>test</profile.active>
             </properties>
             <activation>
+                <!--设置启动maven的环境-->
                 <activeByDefault>true</activeByDefault>
             </activation>
         </profile>
 
+        <!--开发环境maven配置 -->
         <profile>
             <id>dev_env</id>
             <properties>
@@ -157,19 +160,14 @@
             </properties>
         </profile>
 
-        <profile>
-            <id>pre_env</id>
-            <properties>
-                <profile.active>pre</profile.active>
-            </properties>
-        </profile>
-
+        <!--线上环境maven配置-->
         <profile>
             <id>pro_env</id>
             <properties>
                 <profile.active>pro</profile.active>
             </properties>
         </profile>
+
     </profiles>
 
     <build>

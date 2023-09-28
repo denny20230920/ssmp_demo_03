@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: @profile.active@
+    active: test
     group:
       test: testMVC,testDB,testMP,testJetCache,testJwt
       dev: devDB

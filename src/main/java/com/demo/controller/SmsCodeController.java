@@ -4,7 +4,6 @@ import com.demo.controller.result.Code;
 import com.demo.controller.result.JsonResult;
 import com.demo.pojo.SmsCode;
 import com.demo.service.SmsCodeService;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

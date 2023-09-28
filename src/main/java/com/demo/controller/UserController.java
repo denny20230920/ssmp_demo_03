@@ -5,6 +5,7 @@ import com.demo.controller.result.JsonResult;
 import com.demo.pojo.User;
 import com.demo.service.UserSerice;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +20,7 @@ public class UserController {
 
     //用户登录
     @PostMapping("/login")
+    @Async("asyncServiceExecutor")
     public JsonResult<User> login(@RequestBody User user){
 
         User loginUser = userSerice.login(user);
