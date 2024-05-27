@@ -1,13 +1,13 @@
-package com.demo;
+//package com.demo;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+//import org.junit.jupiter.api.Test;
+//import org.springframework.boot.test.context.SpringBootTest;
 
 //@SpringBootTest
-class Ssmp03Tests {
+//class Ssmp03Tests {
 
     //@Test
-    void contextLoads() {
-    }
+//    void contextLoads() {
+//   }
 
-}
+//}
