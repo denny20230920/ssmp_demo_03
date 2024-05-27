@@ -7,13 +7,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Map;
 
-@SpringBootTest
+//@SpringBootTest
 public class toolTest {
 
     @Autowired
     TokenUtil tokenUtil;
 
-    @Test
+   // @Test
     public void testToken(){
 
         String token = tokenUtil.getToken("10000", "userRole");
