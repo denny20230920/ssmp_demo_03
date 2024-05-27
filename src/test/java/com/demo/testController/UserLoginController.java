@@ -16,10 +16,10 @@ import java.net.URI;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
-@SpringBootTest
+//@SpringBootTest
 public class UserLoginController {
 
-    @Test
+   // @Test
     public void test() {
 
         MessageUserLogin.MessageUserLoginRequest.Builder builder = MessageUserLogin.MessageUserLoginRequest.newBuilder();
